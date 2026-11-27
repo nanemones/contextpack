@@ -1,6 +1,6 @@
 // Zero-backend Gumroad License Key verification for ContextPack Pro ($9.99 one-time).
 
-const GUMROAD_PRODUCT_ID = "REPLACE_WITH_GUMROAD_PRODUCT_ID"
+const GUMROAD_PRODUCT_ID = "JeNIUi-F8rrQ-6CQUVPrEQ=="
 const GUMROAD_CHECKOUT_URL = "https://nicolastic1642.gumroad.com/l/contextpack-pro"
 
 async function verifyGumroadLicense(licenseKey, fetchImpl = fetch) {
