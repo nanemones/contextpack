@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ContextPack — Copy Codebase Context to ChatGPT, Claude & Gemini in 1 Click</title>
+  <meta name="description" content="VS Code, Cursor & Windsurf extension to pack files and folders into token-counted, secret-redacted Markdown or Claude XML prompts." />
+  <style>
+    :root { --bg:#09090f; --surface:#121321; --border:#252842; --text:#f8fafc; --muted:#94a3b8; --accent:#818cf8; --accent-dark:#4f46e5; --amber:#f59e0b; }
+    * { box-sizing:border-box; margin:0; padding:0; }
+    body { font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Inter,sans-serif; background:radial-gradient(circle at top center,#1d1b4b 0%,var(--bg) 48%); color:var(--text); line-height:1.6; }
+    .wrap { max-width:920px; margin:0 auto; padding:48px 20px 80px; }
+    .nav { display:flex; justify-content:space-between; align-items:center; margin-bottom:56px; }
+    .logo { font-weight:800; font-size:20px; color:#fff; text-decoration:none; }
+    .logo span { color:var(--accent); }
+    .hero { text-align:center; max-width:720px; margin:0 auto 52px; }
+    .pill { display:inline-block; padding:5px 12px; border-radius:999px; background:rgba(129,140,248,.16); border:1px solid rgba(129,140,248,.4); color:#c7d2fe; font-size:12px; font-weight:600; margin-bottom:18px; }
+    h1 { font-size:clamp(32px,5vw,48px); line-height:1.15; letter-spacing:-.03em; margin-bottom:16px; }
+    .sub { font-size:17px; color:var(--muted); margin-bottom:28px; }
+    .cta-row { display:flex; gap:12px; justify-content:center; flex-wrap:wrap; }
+    .btn { display:inline-block; padding:12px 22px; border-radius:10px; font-weight:700; font-size:15px; text-decoration:none; }
+    .btn-primary { background:var(--accent-dark); color:#fff; border:1px solid var(--accent); }
+    .btn-pro { background:var(--amber); color:#09090f; }
+    .btn-outline { background:var(--surface); color:#fff; border:1px solid var(--border); }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:16px; margin:48px 0; }
+    .card { background:var(--surface); border:1px solid var(--border); border-radius:14px; padding:22px; }
+    .card h3 { font-size:16px; margin-bottom:8px; }
+    .card p { font-size:14px; color:var(--muted); }
+    .footer { text-align:center; color:var(--muted); font-size:13px; margin-top:56px; border-top:1px solid var(--border); padding-top:24px; }
+    .footer a { color:var(--accent); text-decoration:none; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <nav class="nav">
+      <a class="logo" href="#">Context<span>Pack</span></a>
+      <div style="display:flex;gap:16px;">
+        <a href="https://github.com/nanemones/contextpack" style="color:var(--muted);text-decoration:none;font-size:14px;">GitHub</a>
+        <a href="https://nicolastic1642.gumroad.com/l/contextpack-pro" style="color:var(--amber);text-decoration:none;font-size:14px;font-weight:700;">Pro $9.99</a>
+      </div>
+    </nav>
+    <section class="hero">
+      <div class="pill">VS Code · Cursor · Windsurf · VSCodium · 100% Local</div>
+      <h1>Pack Your Codebase for Any LLM in 1 Right-Click</h1>
+      <p class="sub">Stop manually copy-pasting 12 files into ChatGPT or Claude. ContextPack builds a clean, token-counted Markdown or XML prompt — and automatically scrubs API keys &amp; secrets before they hit your clipboard.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="https://github.com/nanemones/contextpack/releases">Download Free .vsix</a>
+        <a class="btn btn-pro" href="https://nicolastic1642.gumroad.com/l/contextpack-pro">Unlock Pro — $9.99 Once</a>
+        <a class="btn btn-outline" href="https://github.com/nanemones/contextpack">View Source</a>
+      </div>
+    </section>
+    <section class="grid">
+      <div class="card">
+        <h3>Auto Secret Redaction</h3>
+        <p>Automatically scrubs OpenAI keys, Anthropic keys, GitHub tokens, AWS keys, JWTs, and <code>.env</code> passwords so you never accidentally leak secrets to an AI chat.</p>
+      </div>
+      <div class="card">
+        <h3>Skeleton Mode (60–75% Fewer Tokens)</h3>
+        <p>Compresses large TypeScript, JavaScript, Python, Go, and Rust files down to imports, interfaces, classes, and function signatures.</p>
+      </div>
+      <div class="card">
+        <h3>Claude XML &amp; Live Token Count</h3>
+        <p>Generates structured <code>&lt;file path="..."&gt;</code> XML blocks plus a directory tree and instant token estimate in one click.</p>
+      </div>
+    </section>
+    <footer class="footer">
+      <p>Built by <a href="https://github.com/nanemones">nanemones</a> · Also check out <a href="https://nanemones.github.io/chatvault/">ChatVault</a> &amp; <a href="https://nanemones.github.io/tablesnap/">TableSnap</a></p>
+    </footer>
+  </div>
+</body>
+</html>

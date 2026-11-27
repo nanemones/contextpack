@@ -1,0 +1,81 @@
+{
+  "name": "contextpack",
+  "displayName": "ContextPack — Codebase to LLM Prompt Packer",
+  "description": "Right-click any files or folders to pack them into a token-counted, .gitignore-aware, secret-redacted Markdown or XML prompt for ChatGPT, Claude & Gemini.",
+  "version": "1.0.0",
+  "publisher": "nanemones",
+  "license": "MIT",
+  "icon": "icon.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nanemones/contextpack"
+  },
+  "homepage": "https://nanemones.github.io/contextpack/",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Other",
+    "Programming Languages",
+    "Snippets"
+  ],
+  "keywords": [
+    "llm",
+    "prompt",
+    "context",
+    "chatgpt",
+    "claude",
+    "gemini",
+    "ai",
+    "markdown",
+    "xml",
+    "tokens",
+    "copy-context"
+  ],
+  "activationEvents": [
+    "onCommand:contextpack.packMarkdown",
+    "onCommand:contextpack.packXml",
+    "onCommand:contextpack.packSkeleton",
+    "onCommand:contextpack.activatePro"
+  ],
+  "main": "./src/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "contextpack.packMarkdown",
+        "title": "ContextPack: Copy as Markdown Prompt (Free)"
+      },
+      {
+        "command": "contextpack.packXml",
+        "title": "ContextPack: Copy as Claude XML + Redact Secrets (Pro)"
+      },
+      {
+        "command": "contextpack.packSkeleton",
+        "title": "ContextPack: Copy Signatures Only / Skeleton Mode (Pro)"
+      },
+      {
+        "command": "contextpack.activatePro",
+        "title": "ContextPack: Activate Pro License Key"
+      }
+    ],
+    "menus": {
+      "explorer/context": [
+        {
+          "command": "contextpack.packMarkdown",
+          "group": "contextpack@1"
+        },
+        {
+          "command": "contextpack.packXml",
+          "group": "contextpack@2"
+        },
+        {
+          "command": "contextpack.packSkeleton",
+          "group": "contextpack@3"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "test": "bun test"
+  }
+}
